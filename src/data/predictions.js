@@ -1,0 +1,105 @@
+export const predictions = [
+    {
+        id: 1,
+        matchId: 1,
+        question: "Who will win?",
+        options: [
+            { id: "p1a", label: "USA", odds: 2.5, votes: 3421 },
+            { id: "p1b", label: "England", odds: 1.8, votes: 5678 },
+            { id: "p1c", label: "Draw", odds: 3.2, votes: 1234 },
+        ],
+        userPrediction: null,
+        pointsAwarded: 50,
+        closesAt: "2026-06-12T19:00:00",
+        resolved: false,
+    },
+    {
+        id: 2,
+        matchId: 2,
+        question: "Who will win?",
+        options: [
+            { id: "p2a", label: "Brazil", odds: 1.9, votes: 6543 },
+            { id: "p2b", label: "Germany", odds: 2.2, votes: 4321 },
+            { id: "p2c", label: "Draw", odds: 3.5, votes: 987 },
+        ],
+        userPrediction: null,
+        pointsAwarded: 50,
+        closesAt: "2026-06-13T17:00:00",
+        resolved: false,
+    },
+    {
+        id: 3,
+        matchId: 3,
+        question: "Who will win?",
+        options: [
+            { id: "p3a", label: "Argentina", odds: 2.1, votes: 5432 },
+            { id: "p3b", label: "France", odds: 2.0, votes: 5678 },
+            { id: "p3c", label: "Draw", odds: 3.3, votes: 1111 },
+        ],
+        userPrediction: "p3a",
+        pointsAwarded: 50,
+        closesAt: "2026-06-14T20:00:00",
+        resolved: false,
+    },
+    {
+        id: 4,
+        matchId: 1,
+        question: "How many total goals?",
+        options: [
+            { id: "p4a", label: "0-1 goals", odds: 4.0, votes: 1234 },
+            { id: "p4b", label: "2-3 goals", odds: 2.2, votes: 4567 },
+            { id: "p4c", label: "4+ goals", odds: 3.0, votes: 2345 },
+        ],
+        userPrediction: null,
+        pointsAwarded: 75,
+        closesAt: "2026-06-12T19:30:00",
+        resolved: false,
+    },
+    {
+        id: 5,
+        matchId: 2,
+        question: "First goal scorer?",
+        options: [
+            { id: "p5a", label: "Neymar Jr", odds: 4.5, votes: 2345 },
+            { id: "p5b", label: "Vinicius Jr", odds: 5.0, votes: 1987 },
+            { id: "p5c", label: "Jamal Musiala", odds: 6.0, votes: 1654 },
+            { id: "p5d", label: "Other player", odds: 1.8, votes: 4321 },
+        ],
+        userPrediction: null,
+        pointsAwarded: 100,
+        closesAt: "2026-06-13T17:30:00",
+        resolved: false,
+    },
+    {
+        id: 6,
+        matchId: 3,
+        question: "Will there be extra time?",
+        options: [
+            { id: "p6a", label: "Yes", odds: 3.5, votes: 2345 },
+            { id: "p6b", label: "No", odds: 1.4, votes: 6789 },
+        ],
+        userPrediction: "p6b",
+        pointsAwarded: 40,
+        closesAt: "2026-06-14T20:30:00",
+        resolved: false,
+    },
+];
+
+export const leaderboard = [
+    { rank: 1, username: "GoalGetter99", points: 1250, predictionsCorrect: 15, avatar: "⚽" },
+    { rank: 2, username: "StadiumKing", points: 1120, predictionsCorrect: 13, avatar: "👑" },
+    { rank: 3, username: "FIFA_Fanatic", points: 980, predictionsCorrect: 11, avatar: "🏆" },
+    { rank: 4, username: "MatchDayPro", points: 850, predictionsCorrect: 10, avatar: "🔥" },
+    { rank: 5, username: "You", points: 720, predictionsCorrect: 8, avatar: "⭐", isUser: true },
+    { rank: 6, username: "SoccerStar22", points: 650, predictionsCorrect: 7, avatar: "🌟" },
+    { rank: 7, username: "WorldCupFan", points: 580, predictionsCorrect: 6, avatar: "🌍" },
+    { rank: 8, username: "OffsideTrap", points: 450, predictionsCorrect: 5, avatar: "🚫" },
+];
+
+export const rewards = [
+    { id: "r1", name: "20% Off Next Match", points: 500, available: true, icon: "🎫" },
+    { id: "r2", name: "Free Stadium Tour", points: 800, available: true, icon: "🏟️" },
+    { id: "r3", name: "Signed Jersey", points: 1500, available: true, icon: "👕" },
+    { id: "r4", name: "VIP Lounge Access", points: 2000, available: false, icon: "🥂" },
+    { id: "r5", name: "Meet & Greet Pass", points: 3000, available: false, icon: "🤝" },
+];
